@@ -1,0 +1,110 @@
+{
+  "id": "c76a3b65-c5c0-4b75-b3cb-cb72973cc9ac",
+  "version": "2.0",
+  "name": "Academy Selenium Test Case",
+  "url": "https://qentinelqi.github.io/shop/",
+  "tests": [{
+    "id": "c77c03a7-e82c-4b31-bd7a-23c9d85d6cee",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "5074ec1d-e02f-4e99-ae43-9b5564b559db",
+    "name": "Shop for tshirt",
+    "commands": [{
+      "id": "d626bb30-3652-4b07-9307-f30a35cdd0b2",
+      "comment": "",
+      "command": "open",
+      "target": "https://qentinelqi.github.io/shop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3d6f0c8-77f9-433c-8902-d9928c154d66",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1912x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "854a345b-66ed-47c4-a889-5195b46694f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bumble the Elephant",
+      "targets": [
+        ["linkText=Bumble the Elephant", "linkText"],
+        ["css=li:nth-child(2) > .product-details a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bumble the Elephant')]", "xpath:link"],
+        ["xpath=//div[@id='products']/section/div/ul/li[2]/div[2]/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shop/products/elephant/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div[2]/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bumble the Elephant')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3db7d173-69c0-409f-8151-3f278b029fd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f53cf726-2934-4d60-b8c1-4406e8b5210c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6c100bf-4b7d-4b96-b559-609be8501489",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "153ffdd8-23a6-472f-90e2-0b7f4db97161",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-item-line:nth-child(2) .snipcart-item-line__header .snipcart__button--icon",
+      "targets": [
+        ["css=.snipcart-item-line:nth-child(2) .snipcart-item-line__header .snipcart__button--icon", "css:finder"],
+        ["xpath=//div[@id='snipcart']/div/div/div/section/ul/li[2]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc0bc5ab-278b-44e3-a420-c5060d21521c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-cart-button__icon--right",
+      "targets": [
+        ["css=.snipcart-cart-button__icon--right", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "81fc0904-e49e-4934-82a0-bafd496e0e0e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c77c03a7-e82c-4b31-bd7a-23c9d85d6cee"]
+  }],
+  "urls": ["https://www.copado.com/", "https://qentinelqi.github.io/shop/"],
+  "plugins": []
+}
